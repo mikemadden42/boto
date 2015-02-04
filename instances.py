@@ -14,7 +14,7 @@ def instances():
     for r in reservations:
         instances = r.instances
         for i in instances:
-            #print dir(i)
+            # print dir(i)
             print i.id
             print i.instance_type
             print i.ip_address
