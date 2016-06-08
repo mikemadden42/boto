@@ -2,12 +2,9 @@
 # -*- coding: utf-8 -*-
 
 import boto.ec2
-import sys
 
 
-def instances():
-    print 'boto %s on %s.' % (boto.Version, sys.platform)
-
+def list_instances():
     conn = boto.ec2.connect_to_region("us-east-1")
     reservations = conn.get_all_reservations()
 
@@ -25,4 +22,4 @@ def instances():
 
 
 if __name__ == '__main__':
-    instances()
+    list_instances()

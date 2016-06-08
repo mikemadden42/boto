@@ -2,12 +2,9 @@
 # -*- coding: utf-8 -*-
 
 import boto
-import sys
 
 
 def buckets():
-    print 'boto %s on %s.' % (boto.Version, sys.platform)
-
     conn = boto.connect_s3()
     rs = conn.get_all_buckets()
 
