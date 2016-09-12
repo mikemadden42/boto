@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 """List s3 buckets."""
 
-import boto
+import boto3
 
 
 def buckets():
     """List s3 buckets."""
-    conn = boto.connect_s3()
+    s3 = boto3.resource('s3')
 
-    for bucket in conn.get_all_buckets():
+    for bucket in s3.buckets.all():
         print bucket.name
 
 

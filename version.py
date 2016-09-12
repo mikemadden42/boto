@@ -1,11 +1,12 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
+"""List boto version."""
 
 import boto
 import sys
 
 
 def version():
+    """List boto version."""
     print 'boto %s on %s.' % (boto.Version, sys.platform)
 
 
