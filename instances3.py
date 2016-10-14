@@ -7,8 +7,10 @@ import boto3
 def list_instances():
     """List ec2 instances."""
     ec2 = boto3.resource('ec2')
-    instances = ec2.instances.filter(Filters=[{'Name': 'instance-state-name',
-                                               'Values': ['running']}])
+    instances = ec2.instances.filter(Filters=[{
+        'Name': 'instance-state-name',
+        'Values': ['running']
+    }])
     for i in instances:
         print i.id
         print i.instance_type
