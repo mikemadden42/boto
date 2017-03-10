@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 """List boto3 version."""
 
-import boto3
 import sys
+import boto3
 
 
 def version():
