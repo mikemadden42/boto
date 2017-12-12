@@ -6,9 +6,9 @@ import boto3
 
 def buckets():
     """List s3 buckets."""
-    s3 = boto3.resource('s3')
+    storage = boto3.resource('s3')
 
-    for bucket in s3.buckets.all():
+    for bucket in storage.buckets.all():
         print bucket.name
 
 
