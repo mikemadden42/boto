@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """List ec2 regions."""
 
 import boto.ec2
@@ -9,7 +9,7 @@ def instances():
     regions = boto.ec2.regions()
 
     for region in regions:
-        print region.name
+        print(region.name)
 
 
 if __name__ == '__main__':

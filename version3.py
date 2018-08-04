@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """List boto3 version."""
 
 import sys
@@ -7,7 +7,7 @@ import boto3
 
 def version():
     """List boto3 version."""
-    print 'boto3 %s on %s.' % (boto3.__version__, sys.platform)
+    print('boto3 %s on %s.' % (boto3.__version__, sys.platform))
 
 
 if __name__ == '__main__':

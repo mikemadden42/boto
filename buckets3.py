@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """List s3 buckets."""
 
 import boto3
@@ -9,7 +9,7 @@ def buckets():
     storage = boto3.resource('s3')
 
     for bucket in storage.buckets.all():
-        print bucket.name
+        print(bucket.name)
 
 
 if __name__ == '__main__':

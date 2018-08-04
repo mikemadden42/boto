@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 """List ec2 instances."""
 
 import boto3
@@ -12,13 +12,13 @@ def list_instances():
         'Values': ['running']
     }])
     for i in instances:
-        print i.id
-        print i.instance_type
-        print i.ip_address
-        print i.key_name
-        print i.launch_time
-        print i.region.name
-        print i.state
+        print(i.id)
+        print(i.instance_type)
+        print(i.ip_address)
+        print(i.key_name)
+        print(i.launch_time)
+        print(i.region.name)
+        print(i.state)
 
 
 if __name__ == '__main__':
