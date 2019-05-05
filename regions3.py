@@ -10,9 +10,9 @@ def instances():
     """List ec2 regions."""
     sess = Session()
 
-    for region in sess.get_available_regions('s3'):
+    for region in sess.get_available_regions("s3"):
         print(region)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     instances()

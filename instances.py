@@ -21,5 +21,5 @@ def list_instances():
             print(i.state)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     list_instances()

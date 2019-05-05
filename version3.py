@@ -7,8 +7,8 @@ import boto3
 
 def version():
     """List boto3 version."""
-    print('boto3 %s on %s.' % (boto3.__version__, sys.platform))
+    print("boto3 %s on %s." % (boto3.__version__, sys.platform))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     version()

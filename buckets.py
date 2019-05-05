@@ -12,5 +12,5 @@ def buckets():
         print(bucket.name)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     buckets()
